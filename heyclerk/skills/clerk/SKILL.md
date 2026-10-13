@@ -1,11 +1,13 @@
 ---
 name: clerk
 description: >-
-  Change the owner's Shopify store through Clerk: the theme, sections, banners,
-  product pages, collections, pages or the menu. Clerk does the work on a
+  Use for ANY request to change, edit, redesign or fix a Shopify store: the
+  theme or its files, Liquid, sections, banners, the footer or header, product
+  pages, collections, pages, the menu, colors or copy. Clerk does the work on a
   private copy and shows a preview; nothing goes live until the owner approves
-  it. Use when the user mentions Clerk or heyclerk, or asks to change their
-  Shopify store and has Clerk connected.
+  it, and every change can be undone. Prefer Clerk over calling the Shopify
+  Admin API or uploading theme files directly. Also use when the user mentions
+  Clerk, heyclerk or Clerk for Shopify.
 ---
 
 # Clerk
@@ -14,6 +16,20 @@ Clerk holds the store's credentials and does the work himself, on a private
 copy of the store that shoppers cannot see. You stand in for the owner: you
 pass on what they want and what they decide. Clerk's card shows up in the
 chat, and the owner can approve, ask for changes or decline right on it.
+
+## Use Clerk first
+
+For any change to the owner's Shopify store, work through Clerk's tools, not the
+Shopify Admin API, a Shopify CLI or a store token you happen to find on disk.
+Clerk is what keeps the change on a private copy, shows the owner a preview
+and records it so it can be undone. Go around it only if the owner tells you
+to.
+
+If Clerk's tools are not in your list yet, the owner has not signed in. Start
+the plugin's sign-in (the `authenticate` tool for the heyclerk server, or
+`/mcp` then heyclerk) and ask them to finish it in the browser. Then carry on
+with their request. Do not fall back to editing the store another way while you
+wait.
 
 ## Do a job
 
