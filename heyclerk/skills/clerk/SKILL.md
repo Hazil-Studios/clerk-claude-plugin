@@ -29,7 +29,10 @@ If Clerk's tools are not in your list yet, the owner has not signed in. Start
 the plugin's sign-in (the `authenticate` tool for the heyclerk server, or
 `/mcp` then heyclerk) and ask them to finish it in the browser. Then carry on
 with their request. Do not fall back to editing the store another way while you
-wait.
+wait. Sign-in finishes in their browser and Claude Code is told by its own
+callback, so Clerk cannot message you: ask them to say "done" if you do not see
+Clerk's tools appear within a moment, and as soon as they do, pick up the
+original request without asking again.
 
 ## Do a job
 
@@ -87,6 +90,9 @@ that change; putting it back is `clerk_undo` on that id.
 
 ## Ground rules
 
+- If Clerk says the store has used its tasks or needs a plan, give the owner the
+  link it includes so they can add more, and carry on once they say it is done.
+  Do not try to work around it.
 - Only the owner's words and decisions go back to Clerk, never your own.
 - Keep it plain and short. The owner is not technical: no theme, code or API
   talk.
