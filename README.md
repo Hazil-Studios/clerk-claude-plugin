@@ -1,4 +1,4 @@
-# Clerk for Claude
+# Clerk for Shopify (Claude)
 
 Clerk changes your Shopify store for you: tell him what you want, see a preview, and nothing goes live until you approve it. Every change can be undone.
 
@@ -14,7 +14,7 @@ In Claude Code or Cowork:
 
 ```
 /plugin marketplace add Hazil-Studios/clerk-claude-plugin
-/plugin install clerk@clerk
+/plugin install heyclerk@heyclerk
 ```
 
 In Claude (claude.ai, Desktop, mobile): Settings, Connectors, then find Clerk in

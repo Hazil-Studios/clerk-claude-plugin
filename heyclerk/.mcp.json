@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "clerk": {
+    "heyclerk": {
       "type": "http",
       "url": "https://mcp.heyclerk.so/mcp/v1"
     }

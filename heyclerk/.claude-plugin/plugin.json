@@ -1,5 +1,5 @@
 {
-  "name": "clerk",
+  "name": "heyclerk",
   "version": "1.0.0",
   "description": "Clerk changes your Shopify store for you: tell him what you want, see a preview, and nothing goes live until you approve it. Every change can be undone.",
   "author": {
@@ -13,9 +13,10 @@
     "shopify",
     "store",
     "ecommerce",
+    "heyclerk",
     "clerk"
   ],
-  "displayName": "Clerk",
+  "displayName": "Clerk for Shopify",
   "icon": "./assets/logo.svg",
   "documentationUrl": "https://heyclerk.so/claude",
   "supportUrl": "https://heyclerk.so/support",

@@ -1,16 +1,16 @@
 {
-  "name": "clerk",
+  "name": "heyclerk",
   "owner": {
-    "name": "Clerk",
+    "name": "Clerk for Shopify",
     "email": "florian@hazil.studio"
   },
   "metadata": {
-    "description": "Clerk, the store operator for Shopify merchants."
+    "description": "Clerk for Shopify, the store operator for Shopify merchants."
   },
   "plugins": [
     {
-      "name": "clerk",
-      "source": "./clerk",
+      "name": "heyclerk",
+      "source": "./heyclerk",
       "description": "Change your Shopify store from Claude: Clerk shows a preview, and nothing goes live until you approve it.",
       "category": "productivity",
       "homepage": "https://heyclerk.so"
