@@ -11,10 +11,13 @@
   "license": "Proprietary",
   "keywords": [
     "shopify",
-    "store",
+    "shopify store",
+    "shopify assistant",
     "ecommerce",
-    "heyclerk",
-    "clerk"
+    "store manager",
+    "merchant",
+    "clerk",
+    "heyclerk"
   ],
   "displayName": "Clerk for Shopify",
   "icon": "./assets/logo.svg",
