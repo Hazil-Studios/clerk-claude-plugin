@@ -1,0 +1,24 @@
+{
+  "name": "clerk",
+  "version": "1.0.0",
+  "description": "Clerk changes your Shopify store for you: tell him what you want, see a preview, and nothing goes live until you approve it. Every change can be undone.",
+  "author": {
+    "name": "Clerk",
+    "email": "florian@hazil.studio",
+    "url": "https://heyclerk.so"
+  },
+  "homepage": "https://heyclerk.so",
+  "license": "Proprietary",
+  "keywords": [
+    "shopify",
+    "store",
+    "ecommerce",
+    "clerk"
+  ],
+  "displayName": "Clerk",
+  "icon": "./assets/logo.svg",
+  "documentationUrl": "https://heyclerk.so/claude",
+  "supportUrl": "https://heyclerk.so/support",
+  "privacyPolicyUrl": "https://heyclerk.so/privacy",
+  "termsOfServiceUrl": "https://heyclerk.so/terms"
+}
