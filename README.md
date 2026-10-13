@@ -18,7 +18,9 @@ In Claude Code or Cowork:
 ```
 
 In Claude (claude.ai, Desktop, mobile): Settings, Connectors, then find Clerk in
-the directory. The connector is the remote server `https://mcp.heyclerk.so/mcp/v1`.
+the directory. The connector is the remote server `https://mcp.heyclerk.so/mcp/v1`, where Clerk does the work.
+This plugin uses `https://mcp.heyclerk.so/mcp/code`, for coding agents: the model does the work
+itself, with Clerk's signing proxy and approval card.
 
 You need a Shopify store connected to Clerk first. Start at https://heyclerk.so.
 

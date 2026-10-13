@@ -17,7 +17,8 @@ chat, and the owner can approve, ask for changes or decline right on it.
 
 ## Do a job
 
-If you have a shell and a disk of your own (Claude Code, Cowork), the Clerk
+If you have a shell and a disk of your own (Claude Code, Cursor, Cowork), you are
+on the coding-agent address, `clerk_start` is not offered, and the Clerk
 server's instructions ask you to do the work yourself: `clerk_open`, then
 `clerk_theme_pull`, and follow them. Everywhere else, hand Clerk the job:
 
