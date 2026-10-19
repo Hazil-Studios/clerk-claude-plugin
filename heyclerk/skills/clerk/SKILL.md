@@ -81,7 +81,7 @@ open it again with `shell: false`.
    `clerk_stop` ends a job where it stands.
 6. **A redesign, or anything not live yet.** `clerk_themes` lists the store's
    themes and `clerk_new_theme` copies live into a new one; pass `theme` to
-   `clerk_start` and the job is built on it and saved back to it, not live.
+   `clerk_open` (or `clerk_start`) and the task is built on it and saved back to it, not live.
    `clerk_publish_to` sends a job to another theme. Only `clerk_make_live`,
    with the owner's own words, makes a theme what shoppers see.
 
@@ -98,7 +98,7 @@ seen its preview; then `clerk_approve` with its id.
 When the owner comes back to an earlier change ("move the size guide under the
 variant picker"), or presses **Talk about this** on it in Clerk's app, read it
 first with `clerk_status` and its id. More changes to it are a new
-`clerk_start` on the same store, in their words, saying it follows on from
+`clerk_open` with `shell: false` (or `clerk_start`) on the same store, in their words, saying it follows on from
 that change; putting it back is `clerk_undo` on that id.
 
 ## Ground rules
