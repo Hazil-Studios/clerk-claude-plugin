@@ -2,7 +2,7 @@
   "mcpServers": {
     "heyclerk": {
       "type": "http",
-      "url": "https://mcp.heyclerk.so/mcp/code"
+      "url": "https://mcp.heyclerk.so/mcp/v1"
     }
   }
 }

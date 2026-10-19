@@ -34,22 +34,35 @@ callback, so Clerk cannot message you: ask them to say "done" if you do not see
 Clerk's tools appear within a moment, and as soon as they do, pick up the
 original request without asking again.
 
-## Do a job
+## Do a task
 
-If you have a shell and a disk of your own (Claude Code, Cursor, Cowork), you are
-on the coding-agent address, `clerk_start` is not offered, and the Clerk
-server's instructions ask you to do the work yourself: `clerk_open`, then
-`clerk_theme_pull`, and follow them. Everywhere else, hand Clerk the job:
+Every task starts with `clerk_stores`. Then you open it, and how depends on one
+question about you: can you run commands on a disk in this session, with
+internet access to heyclerk.so?
+
+- **Yes** (Claude Code, Cursor, Codex, Cowork). You do the work yourself. Clerk
+  recognises most of these and offers only the tools for that: `clerk_theme_setup`
+  opens the task and gives you the task's `.env` and `bin/theme`, and the
+  server's instructions take it from there. Where Clerk asks instead (you have
+  `clerk_open`), call `clerk_open` with `shell: true`. Steps 3 to 6 below are for
+  a chat; in this mode the server's instructions replace them.
+- **No** (Claude on the web, Claude Desktop, the phone app, any chat). Clerk does
+  the work and you stand in for the owner. Call `clerk_open` with `shell: false`.
+  Where only `clerk_start` is offered (ChatGPT), it is the same call.
+
+If you said yes and cannot run what Clerk gives you, `clerk_stop` that task and
+open it again with `shell: false`.
 
 1. **Settle the store.** Call `clerk_stores`. If it lists more than one, work
    out which one from the owner's own words (a name, a domain, a pasted link)
    or a store they @-mentioned, and say which one you took. If you cannot
    tell, ask in the chat before starting. Never guess, and never carry a store
-   over from an earlier job. If it lists none, give the owner the link it
+   over from an earlier task. If it lists none, give the owner the link it
    returns to connect their store.
-2. **Hand Clerk the job.** `clerk_start` with the request in the owner's own
-   words and the store id. Pictures or files go along as public https links.
-   Clerk's card appears and follows the job by itself.
+2. **Hand Clerk the task.** `clerk_open` with `shell: false` (or `clerk_start`),
+   the request in the owner's own words and the store id. Pictures or files go
+   along as public https links. Clerk's card appears and follows the task by
+   itself.
 3. **Follow it.** Call `clerk_wait` with the cursor until something changes:
    a question, a preview or the result. Nothing reaches you on its own.
    - **A question:** the card shows it as a form. If the owner answers in the
